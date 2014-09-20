@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+	<!-- need to update this every time something changes - must be an increasing number -->
+	<Version build="7"/>
+	<Options>
+		<Option optionName="SoundVolume" value=".75"/>
+		<Option optionName="MusicVolume" value=".5"/>
+		<Option optionName="SoundIsOn" value="true"/>
+		<Option optionName="MusicIsOn" value="true"/>
+	</Options>
+	<Levels LevelsPath="Assets/scenes/">
+		<Map>level_full</Map>
+	</Levels>
+	<PlayerColors>
+		<Color colorName="red" one="243,172,151" two="255,122,82" three="140,12,18" four="228,60,42" />
+		<Color colorName="blue" one="165,201,255" two="82,137,255" three="0,65,140" four="0,136,255"/>
+		<Color colorName="yellow" one="255,254,179" two="255,250,32" three="239,167,8" four="255,212,13"/>
+		<Color colorName="green" one="190,255,199" two="82,255,150" three="0,137,96 " four="44,216,111"/>
+		<Color colorName="pink" one="255,208,247" two="255,155,138" three="126,0,83" four="255,15,151"/>
+		<Color colorName="purple" one="230,212,250" two="182,146,233" three="68,19,74 " four="115,63,118"/>
+		<Color colorName="brown" one="250,239,212" two="193,165,135" three="81,36,0" four="136,92,62"/>
+		<Color colorName="bnw" one="255,255,255" two="170,170,170" three="0,0,0" four="78,78,78"/>
+	</PlayerColors>
+	<!-- Model names and information about them go here -->
+	<Models>
+		<!--
+		Model format:
+			name=human friendly version of the name
+			loc=location relative to the Resources folder, eg "carts/buggy1" - must be / and not \
+			type=what type of model it is:
+				currently available for cart type:
+					"body"
+				currently available for char type:
+					"head" - well I haven't done it yet, but soon
+					"body"
+				not needed for ball since it's just a ball
+		-->
+		<Cart name="Buggy" location="buggy_m" type="body"/>
+		<Cart name="Hotrod" location="hotrod_m" type="body"/>
+		<Character name="Patrick" location="PatrickOverPatrick" type="body"/>
+		<Character name="Brad" location="BradOverPatrick" type="body"/>
+		<Ball name="Ball" location="ball"/>
+	</Models>
+	<!-- random server info -->
+	<ServerInfo version="Swisshelm" hostname="" playername="" NATmode="-1"/>
+</Config>
